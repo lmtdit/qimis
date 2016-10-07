@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = {
   write: true,
   prefix: '~',
@@ -10,7 +8,7 @@ module.exports = {
   dep: [
   devdep: [
     'autod',
-    'eslint',
+    'eslint'
   ],
   keep: [
   ],

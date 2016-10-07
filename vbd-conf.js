@@ -1,4 +1,4 @@
-const vbd = require('./node_modules/vbd');
+const vbd = require('vbd');
 vbd.match('vbd-cfg.js', {
   release: false
 });
