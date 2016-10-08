@@ -1,0 +1,10 @@
+.list{
+  height: 40px;
+  background-color: #eee;
+}
+.list li{
+  line-height: 40px;
+  font-style: 16px;
+  color: #f60;
+  background-color: #eee;
+}

@@ -1,0 +1,27 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<script>
+  (function(doc, win) {
+    var docEl = doc.documentElement,
+      resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+    var recalc = function() {
+      var clientWidth = docEl.clientWidth;
+      if (!clientWidth) return;
+      var fZ = 100 * (clientWidth / 640);
+      if (fZ >= 100) {
+        docEl.style.fontSize = 100 + 'px';
+      } else if (fZ <= 50) {
+        docEl.style.fontSize = 50 + 'px';
+      } else {
+        docEl.style.fontSize = fZ + 'px';
+      }
+    };
+    recalc();
+
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+  })(document, window);
+</script><!--ignore-->
