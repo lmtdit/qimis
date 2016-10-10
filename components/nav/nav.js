@@ -1,5 +1,5 @@
 module.exports = {
-  init: ()=> {
+  init: () => {
     console.log('nav js');
   }
 };
