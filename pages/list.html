@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>list</title>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="import" href="./_common/head.html?__inline">
+    <link rel="stylesheet" href="/views/css/reset.css"><!--ignore-->
+  </head>
+  <body>
+    <script src="/views/libs/corelibs.js"></script>
+    <script>
+    require.config(__VBD_CONFIG__);
+    require.async('v/p/list');
+    </script>
+  </body>
 </html>

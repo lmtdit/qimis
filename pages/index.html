@@ -6,12 +6,12 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link rel="import" href="./_common/head.html?__inline">
-    <link rel="stylesheet" href="views/css/reset.css"><!--ignore-->
+    <link rel="stylesheet" href="/views/css/reset.css"><!--ignore-->
   </head>
   <body>
-    <script src="views/libs/corelibs.js"></script>
-    <script src="views/pages/index.js"></script>
+    <script src="/views/libs/corelibs.js"></script>
     <script>
+    require.config(__VBD_CONFIG__);
     require.async('v/p/index');
     </script>
   </body>
