@@ -8,11 +8,11 @@ var rules = {
 /**
  *  @param tarVer {String} 需要判断的版本号
  *  @param verRule {String} 判定规则：
- *                              a) "9.5~" 版本号大于等于9.5
- *                              b) "9.5~9.7" 版本号大于等于9.5小于9.7
- *                              b) "~9.5" 版本号小于9.5
+ *         a) "9.5~" 版本号大于等于9.5
+ *         b) "9.5~9.7" 版本号大于等于9.5小于9.7
+ *         b) "~9.5" 版本号小于9.5
  **/
-function match(tarVer, verRule) {
+module.exports = function match(tarVer, verRule) {
 
   var ruleMatches;
 
@@ -93,8 +93,6 @@ function getMaxBitLength(versions) {
 function isString(x) {
   return x !== null && x !== undefined && x.constructor === String;
 }
-
-module.exports = match;
 
 /****  testing  ****/
 // console.log('9.6', '9.6~', match('9.6', '9.6~'));
