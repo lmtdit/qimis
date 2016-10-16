@@ -8,6 +8,10 @@ env:
 
 globals:
   fis3: true
+  require: true
+  __inline: true
+  __uri: true
+  $: true
 
 rules:
   strict: [2, global]

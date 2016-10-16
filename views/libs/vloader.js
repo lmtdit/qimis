@@ -420,7 +420,7 @@
       }
     });
     if (options.combo) {
-      url += options.comboPattern.replace('%s', uris.join(','));
+      url += options.comboPattern.replace('%s', uris.join(',')) + '&hash=' + options.hash;
     } else {
       url += options.urlPattern + uris[0] + '?v=' + Math.random();
     }
