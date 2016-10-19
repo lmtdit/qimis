@@ -1,11 +1,11 @@
-const header = module.exports = {
+const tpl = require('./header.html');
 
-  init: () => {
-    const tpl = require('./header.html');
-    console.log(tpl);
+const header = module.exports = {
+  init() {
+    console.log(Vue);
     header.test();
   },
-  test: () => {
+  test() {
     console.log('header js');
   }
 };

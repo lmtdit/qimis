@@ -1,2 +1,2 @@
 __inline('./vloader.js');
-__inline('./vue.js');
+__inline('./vue.min.js');

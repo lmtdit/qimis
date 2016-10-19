@@ -6,11 +6,12 @@
   "scripts": {
     "autod": "autod",
     "dev": "vbd release -wcL",
+    "start": "vbd server start",
     "clean": "[ -d dist ] && rm -r dist || true",
-    "build": "npm run clean; vbd release prod -cud dist",
+    "build": "vbd release prod -cud dist",
     "lint": "eslint ./",
     "test": "npm run lint && mocha test/**.test.js",
-    "prepublish": "npm run build"
+    "prepublish": "npm run clean; npm run lint; npm run build"
   },
   "author": "lmtdit",
   "license": "ISC",
